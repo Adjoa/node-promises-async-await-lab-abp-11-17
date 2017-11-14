@@ -26,7 +26,7 @@ class Question {
     console.log("\n")
   }
 
-  // FIXME: Implement Promise
+  // FIXED: Implement Promise
   static Find(id){
     console.log(`Waiting for Question ${id} to load...`)
     return new Promise(function(resolve) {
@@ -39,7 +39,7 @@ class Question {
     })
   }
 
-  // FIXME: Implement async / await
+  // FIXED: Implement async / await
   static async Print(id){
     const question = await Question.Find(id)
 
